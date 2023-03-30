@@ -26,8 +26,7 @@ Route::get('/edit/{id}',[StudentController::class, 'edit'])->name('edit');
 Route::put('/edit/{id}',[studentController::class, 'change'])->name('edit');
 
 Route::put('/students/{id}', [StudentController::class, 'change'])->name('student.update');
-Route::get('/students/{id}', [StudentController::class, 'destroy'])->name('students.destroy');
-Route::get('/update/deleted', [StudentController::class, 'view'])->name('students.index');
+
 //Route::get('/test',[studentController::class, 'insert'])->name('test');
 
 
